@@ -37,4 +37,5 @@
 
 .backGroundRain {
     background-image: url('./../assets/rain.jpg');
+    background-position: left;
 }
