@@ -37,5 +37,6 @@
 
 .backGroundRain {
     background-image: url('./../assets/rain.jpg');
-    background-position: left;
+    background-position: center;
+    background-size: 350px 200px;
 }
