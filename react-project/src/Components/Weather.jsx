@@ -2,6 +2,7 @@ import { fetchWeatherData } from "../Api";
 import { useState } from "react";
 import { useEffect } from "react";
 import Widget from "./Widget";
+import './Weather.css';
 
 export const Weather = () => {
     const [weatherData, setWeatherData] = useState([]);
@@ -34,14 +35,20 @@ export const Weather = () => {
     const localTemp = weatherData.current.temp_c.toString().slice(0, 2) + '°C';
     const weatherIcon = weatherData.current.condition.icon;
 
+    const isRaining = weatherData.current.condition.text.toLowerCase().includes('rain');
+
     return (
-        <Widget title={'Weather'}>
-            <ul>
-                <li>{currentDayOfWeek}</li>
-                <li>{currentDate.getDate()} {currentMonth}</li>
-                <li>{localTemp}</li>
-                <li><img src={weatherIcon} /></li>
-            </ul>
+        <Widget>
+            <div id="weatherContainer" className={isRaining ? 'backGroundRain' : ''}>
+                <ul className="align-items-start">
+                    <li id="dayOfWeek">{currentDayOfWeek}</li>
+                    <li>{currentDate.getDate()} {currentMonth}</li>
+                </ul>
+                <ul className="align-items-end">
+                    <li><img id="weatherIcon" src={weatherIcon} /></li>
+                    <li>{localTemp}</li>
+                </ul>
+            </div>
         </Widget>
     );
 };

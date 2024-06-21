@@ -5,6 +5,7 @@
     margin: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #F4F9FD;
+    color: #142083;
 }
 
 .widget-header {
@@ -15,10 +16,8 @@
 .widget-header h2 {
     margin: 0;
     font-size: 1.5em;
-    color: #333;
 }
 
 .widget-content {
     font-size: 1em;
-    color: #555;
 }
