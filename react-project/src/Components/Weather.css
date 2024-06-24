@@ -1,29 +1,30 @@
-#weatherContainer {
+.weatherContentContainer {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    font-weight: 500;
-    padding: 10px 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    column-gap: 30px;
+    padding: 0 2rem;
 }
 
-#weatherContainer > ul {
+.text-align-end {
+    text-align: end;
+}
+
+.text-align-start {
+    text-align: start;
+}
+
+.weatherList {
     list-style: none;
-    margin: 0;
     padding: 0;
+    grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 }
 
-.align-items-start {
-    align-items: flex-start;
-}
-
-.align-items-end {
-    align-items: flex-end;
-}
-
-#weatherContainer > ul > li {
-    padding: 5px 0px;
+#weatherIcon {
+    transform: translate(10px, 20px)
 }
 
 #dayOfWeek {
@@ -31,14 +32,11 @@
     font-size: 1.5rem;
 }
 
-#weatherIcon {
-    transform: translateX(10px);
-}
-
 .backGroundRain {
     background-image: url('./../assets/rain.jpg');
     background-position: center;
     background-size: 350px 200px;
+
 }
 
 .backGroundCloudy {
@@ -46,6 +44,7 @@
     back ground position bottom is, wordt het andere afbeelding.*/
     background-image: url('./../assets/sunny.jpg');
     background-position: bottom;
+    border-radius: 16px;
 }
 
 .backGroundSunny {

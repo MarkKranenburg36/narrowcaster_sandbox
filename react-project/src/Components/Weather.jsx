@@ -48,18 +48,15 @@ export const Weather = () => {
     }
 
     return (
-        <Widget className={'widget-top-left'}>
-            <div id="weatherContainer"
-                className={getWeatherClass()}>
-                <ul className="align-items-start">
+        <Widget className={`widget-top-left ${getWeatherClass()}`} childClassName={'weatherContentContainer'}>
+                <ul className="weatherList text-align-start">
                     <li id="dayOfWeek">{currentDayOfWeek}</li>
                     <li>{currentDate.getDate()} {currentMonth}</li>
                 </ul>
-                <ul className="align-items-end">
-                    <li><img id="weatherIcon" src={weatherIcon} /></li>
+                <ul className="weatherList text-align-end">
+                    <li><img id="weatherIcon" src={weatherIcon} alt="Weather Icon" /></li>
                     <li>{localTemp}</li>
                 </ul>
-            </div>
         </Widget>
     );
 };
