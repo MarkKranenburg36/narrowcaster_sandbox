@@ -3,6 +3,7 @@ import { Weather } from './Components/Weather';
 import { Greeting } from './Components/Greeting';
 import Widget from './Components/Widget';
 import { Logo } from './Components/Logo';
+import NSlogo  from './assets/NS-logo.png';
 
 function App() {
   const getGreeting = () => {
@@ -20,14 +21,14 @@ function App() {
 
   const getTimeOfDay = () => {
     let time = new Date().getHours();
-    let period = time < 12 ? 'morning' : time >= 12 && 18 ? 'afternoon' : 'evening';
+    let period = time < 12 ? 'morning' : (time >= 12 && time < 18 ? 'afternoon' : 'evening');
     return period;
   }
   
   return (
     <div id='widgetContainer'>
       <Greeting text={getGreeting()} />
-      <Logo NSlogo={'./../assets/NS-logo.png'}/>
+      <Logo />
       <Weather />
       <Widget title={'Social media'} className={'widget-bottom-left'}>
         <p>child 1</p>
@@ -43,7 +44,7 @@ function App() {
       <Widget title={'Events'} className={'widget-center-right-bottom'}>
 
       </Widget>
-      <Widget title={'Utrecht CS'} className={'widget-right bg-yellow'}>
+      <Widget title={'Utrecht CS'} className={'widget-right bg-yellow'} NSlogo={NSlogo}>
 
       </Widget>
     </div>

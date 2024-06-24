@@ -43,6 +43,9 @@
 .widget-header {
     padding-bottom: 8px;
     margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.25rem;
 }
 
 .widget-header h2 {
@@ -56,4 +59,10 @@
 
 .bg-yellow {
     background-color: #FFF8DE;
+}
+
+#NS-icon {
+    height: 1rem;
+    align-self: center;
+    transform: translateY(-0.15rem);
 }
