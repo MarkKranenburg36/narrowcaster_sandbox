@@ -36,10 +36,21 @@ export const Weather = () => {
     const weatherIcon = weatherData.current.condition.icon;
 
     const isRaining = weatherData.current.condition.text.toLowerCase().includes('rain');
+    const isCloudy = weatherData.current.condition.text.toLowerCase().includes('cloudy');
+    const isSunny = weatherData.current.condition.text.toLowerCase().includes('sunny');
+
+
+    const getWeatherClass = () => {
+        if (isRaining) return 'backGroundRain';
+        if (isCloudy) return 'backGroundCloudy';
+        if (isSunny) return 'backGroundSunny';
+        return '';
+    }
 
     return (
         <Widget>
-            <div id="weatherContainer" className={isRaining ? 'backGroundRain' : ''}>
+            <div id="weatherContainer"
+                className={getWeatherClass()}>
                 <ul className="align-items-start">
                     <li id="dayOfWeek">{currentDayOfWeek}</li>
                     <li>{currentDate.getDate()} {currentMonth}</li>
