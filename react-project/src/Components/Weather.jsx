@@ -48,7 +48,7 @@ export const Weather = () => {
     }
 
     return (
-        <Widget>
+        <Widget className={'widget-top-left'}>
             <div id="weatherContainer"
                 className={getWeatherClass()}>
                 <ul className="align-items-start">

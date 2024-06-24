@@ -1,8 +1,8 @@
 import './Widget.css';
 
-const Widget = ({ children, title }) => {
+const Widget = ({ children, title, className }) => {
     return (
-        <div className="widget">
+        <div className={`widget ${className}`}>
             {title && (
                 <div className="widget-header">
                     <h2>{title}</h2>

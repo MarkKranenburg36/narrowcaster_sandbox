@@ -1,4 +1,9 @@
+#greeting {
+    min-width: 410px;
+}
+
 #greeting > h1 {
     color: #142038;
     font-weight: 600;
+    grid-row: 1 / 2;
 }
