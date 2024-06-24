@@ -27,7 +27,7 @@ function App() {
   return (
     <div id='widgetContainer'>
       <Greeting text={getGreeting()} />
-      <Logo />
+      <Logo NSlogo={'./../assets/NS-logo.png'}/>
       <Weather />
       <Widget title={'Social media'} className={'widget-bottom-left'}>
         <p>child 1</p>

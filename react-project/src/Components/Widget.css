@@ -7,6 +7,10 @@
     color: #142083;
 }
 
+.widget-header {
+    text-align: start;
+}
+
 .widget-top-left {
     grid-row: 2 / 3;
     padding: 0;
