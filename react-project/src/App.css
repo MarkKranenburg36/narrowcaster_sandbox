@@ -1,11 +1,27 @@
 #root {
   margin: 0;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
+#body {
+  background-color: whitesmoke;
+  padding: 0rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #widgetContainer {
+  height: 90vh;
+  width: 95vw;
+  background-color: white;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px repeat(3, 1fr);
+  grid-template-rows: 0.8fr 2fr 2fr 4fr;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 16px;
 }
