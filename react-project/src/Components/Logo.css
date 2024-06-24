@@ -1,0 +1,11 @@
+#qquestLogo {
+    border-radius: 50%;
+    height: 5rem;
+}
+
+.logoContainer {
+    grid-column: 4 / 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}

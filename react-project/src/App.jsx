@@ -2,6 +2,7 @@ import './App.css'
 import { Weather } from './Components/Weather';
 import { Greeting } from './Components/Greeting';
 import Widget from './Components/Widget';
+import { Logo } from './Components/Logo';
 
 function App() {
   const getGreeting = () => {
@@ -26,6 +27,7 @@ function App() {
   return (
     <div id='widgetContainer'>
       <Greeting text={getGreeting()} />
+      <Logo />
       <Weather />
       <Widget title={'Social media'} className={'widget-bottom-left'}>
         <p>child 1</p>
