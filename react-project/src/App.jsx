@@ -4,6 +4,7 @@ import { Greeting } from './Components/Greeting';
 import Widget from './Components/Widget';
 import { Logo } from './Components/Logo';
 import NSlogo  from './assets/NS-logo.png';
+import { FunFact } from './Components/FunFact';
 
 function App() {
   const getGreeting = () => {
@@ -35,10 +36,13 @@ function App() {
         <p>child 2</p>
       </Widget>
       <Widget title={'Nieuwsbrief'} className={'widget-center-left'}>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero ut veritatis ratione nihil ipsam quas iure dolorum repellat corporis, provident ipsa quod asperiores laborum. Porro consequuntur soluta quis beatae.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero ut veritatis ratione nihil ipsam quas iure dolorum repellat
+           corporis, provident ipsa quod asperiores laborum. Porro consequuntur soluta quis beatae.</p>
       </Widget>
       <Widget title={'Vandaag'} className={'widget-center-right-top'}>
-        <p>Weetje</p>
+        <FunFact>
+
+        </FunFact>
         <p>Gefeliciteeerd!</p>
       </Widget>
       <Widget title={'Events'} className={'widget-center-right-bottom'}>
@@ -52,3 +56,6 @@ function App() {
 }
 
 export default App
+
+
+// EAA1qqeJZCfYEBO4RO5qsfd0oRJz5CMCTu7BVuJISQz3afR1lpE6e2eKecyAbNyg8gLrwvTTBdIfZCkjRpCZBxflWlUZBwyRu0NmgjsxJfPfAzfAEENTLaWnMF29HijW4CaZBv6wZAiddlMVL2tTInlhb5xbpZAEtua8hSVcfyK7ZA03WPCt55jD5ZBdnkxY9Efoo3G3lWAWXR2GU8BvlHKP2L1JrWkR0mlzhzd31GrgWTyFyhW3w2GfG9L4OObG47HLzvGrGk7gZDZD

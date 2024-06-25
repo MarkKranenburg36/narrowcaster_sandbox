@@ -1,4 +1,4 @@
-import { fetchWeatherData } from "../Api";
+import { fetchWeatherData } from "../FetchWeatherData";
 import { useState } from "react";
 import { useEffect } from "react";
 import Widget from "./Widget";
