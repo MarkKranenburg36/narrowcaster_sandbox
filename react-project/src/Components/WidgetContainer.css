@@ -1,11 +1,13 @@
 .widgetContainer {
     border-radius: 1rem;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+}
+
+#factContainer {
+    grid-column: 2 / 3;
 }
 
 .bgWhite {
     background-color: #fff;
-}
-
-.bgBlue {
-    background-color: #3EBDEE;
 }

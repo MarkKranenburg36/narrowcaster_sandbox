@@ -5,7 +5,8 @@ import Widget from './Components/Widget';
 import { Logo } from './Components/Logo';
 import NSlogo from './assets/NS-logo.png';
 import { FunFact } from './Components/FunFact';
-import WidgetContainer from './Components/WidgetContainer';
+import WidgetContainerVandaag from './Components/WidgetContainerVandaag';
+import WidgetContainerEvents from './Components/WidgetContainerEvents';
 
 function App() {
   const getGreeting = () => {
@@ -37,24 +38,28 @@ function App() {
         <p>child 2</p>
       </Widget>
       <Widget title={'Nieuwsbrief'} className={'widget-center-left'}>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque vero ut veritatis ratione nihil ipsam quas iure dolorum repellat
-          corporis, provident ipsa quod asperiores laborum. Porro consequuntur soluta quis beatae.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi corrupti culpa qui natus ab magni molestiae ut quae animi illo. Consequuntur at, eius impedit incidunt quod repellendus sed similique dolorum?
+        Illum, consequatur, facere saepe provident explicabo ipsa asperiores, ullam odit quis vero aspernatur. Voluptatum vero ratione eligendi fugiat nam, quam natus optio ipsa. Eius eveniet reiciendis, possimus laborum officia saepe!
+        Repellat quae soluta temporibus? Rem maiores provident temporibus eum, ad cum. Error optio odit doloremque molestias voluptate nobis iusto neque velit officiis voluptatem, assumenda deleniti commodi aut, ducimus non inventore.</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iusto excepturi ipsam molestiae enim quia. Earum, necessitatibus
+          molestiae voluptatum consectetur nemo quisquam magni molestias voluptatibus, alias exercitationem, laboriosam dicta eum?</p>
       </Widget>
       <Widget title={'Vandaag'} className={'widget-center-right-top'}>
-        <WidgetContainer title={'Weetje!'} bgColor={'bgWhite'}>
+        <WidgetContainerVandaag title={'Weetje!'} icon={'hhhh'}>
           <FunFact />
-        </WidgetContainer>
-        <WidgetContainer title={'Gefeliciteerd'} bgColor={'bgWhite'}>
+        </WidgetContainerVandaag>
+        <WidgetContainerVandaag title={'Gefeliciteerd'}>
           <p>henk & dirk!</p>
-        </WidgetContainer>
+        </WidgetContainerVandaag>
       </Widget>
       <Widget title={'Events'} className={'widget-center-right-bottom'}>
-      <WidgetContainer bgColor={'bgBlue'}>
+      <WidgetContainerEvents>
           <p>Event A</p>
-        </WidgetContainer>
-        <WidgetContainer bgColor={'bgBlue'}>
+        </WidgetContainerEvents>
+        <WidgetContainerEvents>
           <p>Event B</p>
-        </WidgetContainer>
+        </WidgetContainerEvents>
       </Widget>
       <Widget title={'Utrecht CS'} className={'widget-right bg-yellow'} NSlogo={NSlogo}>
 

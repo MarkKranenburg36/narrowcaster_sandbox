@@ -1,13 +1,10 @@
 .widget {
     border: 1px solid #ddd;
     border-radius: 16px;
-    padding: 16px;
+    padding: 32px 32px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #F4F9FD;
     color: #142083;
-}
-
-.widget-header {
     text-align: start;
 }
 
