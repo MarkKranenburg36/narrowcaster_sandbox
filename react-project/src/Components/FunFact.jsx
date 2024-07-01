@@ -33,7 +33,7 @@ export const FunFact = () => {
 
     return (
         <>
-            <p id="funFact">{fact + '.'}</p>
+            <p className="vandaagContent">{fact + '.'}</p>
         </>
     )
 }

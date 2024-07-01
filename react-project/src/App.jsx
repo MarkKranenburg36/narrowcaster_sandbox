@@ -8,6 +8,7 @@ import { FunFact } from './Components/FunFact';
 import WidgetContainerVandaag from './Components/WidgetContainerVandaag';
 import WidgetContainerEvents from './Components/WidgetContainerEvents';
 import lightBulp from './assets/lightbulpIcon.png';
+import gefeliciteerd from './assets/gefeliciteerd.png';
 
 function App() {
   const getGreeting = () => {
@@ -50,8 +51,8 @@ function App() {
         <WidgetContainerVandaag title={'Weetje!'} icon={lightBulp} className={'bgWhite'}>
           <FunFact />
         </WidgetContainerVandaag>
-        <WidgetContainerVandaag title={'Gefeliciteerd'}>
-          <p>henk & dirk!</p>
+        <WidgetContainerVandaag title={'Gefeliciteerd'} icon={gefeliciteerd} className={'bgWhite'}>
+          <p className='vandaagContent'>henk & dirk!</p>
         </WidgetContainerVandaag>
       </Widget>
       <Widget title={'Events'} className={'widget-center-right-bottom'}>

@@ -5,10 +5,10 @@ const WidgetContainerVandaag = ({ children, title, icon, className}) => {
     return (
         <div className={`widgetContainer ${className}`}>
             {icon && (
-                <img id='lightBulp' src={icon} />
+                <img className='vandaagIcon' src={icon} />
             )}
             <h3>{title}</h3>
-            <div id='factContainer'>{children}</div>
+            <div className='vandaagContentContainer'>{children}</div>
         </div>
     )
 };
