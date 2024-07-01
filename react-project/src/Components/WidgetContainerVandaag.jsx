@@ -1,11 +1,11 @@
 import './WidgetContainer.css';
 
-const WidgetContainerVandaag = ({ children, title, icon}) => {
+const WidgetContainerVandaag = ({ children, title, icon, className}) => {
 
     return (
-        <div className={'widgetContainer'}>
+        <div className={`widgetContainer ${className}`}>
             {icon && (
-                <h6>{icon}</h6>
+                <img id='lightBulp' src={icon} />
             )}
             <h3>{title}</h3>
             <div id='factContainer'>{children}</div>

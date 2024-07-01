@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import './FunFact.css';
 
 export const FunFact = () => {
     const [fact, setFact] = useState('');
@@ -32,7 +33,7 @@ export const FunFact = () => {
 
     return (
         <>
-            <p>{fact}</p>
+            <p id="funFact">{fact + '.'}</p>
         </>
     )
 }

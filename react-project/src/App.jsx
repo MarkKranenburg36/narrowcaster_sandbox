@@ -7,6 +7,7 @@ import NSlogo from './assets/NS-logo.png';
 import { FunFact } from './Components/FunFact';
 import WidgetContainerVandaag from './Components/WidgetContainerVandaag';
 import WidgetContainerEvents from './Components/WidgetContainerEvents';
+import lightBulp from './assets/lightbulpIcon.png';
 
 function App() {
   const getGreeting = () => {
@@ -46,7 +47,7 @@ function App() {
           molestiae voluptatum consectetur nemo quisquam magni molestias voluptatibus, alias exercitationem, laboriosam dicta eum?</p>
       </Widget>
       <Widget title={'Vandaag'} className={'widget-center-right-top'}>
-        <WidgetContainerVandaag title={'Weetje!'} icon={'hhhh'}>
+        <WidgetContainerVandaag title={'Weetje!'} icon={lightBulp} className={'bgWhite'}>
           <FunFact />
         </WidgetContainerVandaag>
         <WidgetContainerVandaag title={'Gefeliciteerd'}>
