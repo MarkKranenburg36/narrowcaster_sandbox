@@ -1,8 +1,8 @@
-const WidgetContainerEvents = ({ children, title}) => {
+const WidgetContainerEvents = ({ children, title, className}) => {
 
     return (
-        <div className={'widgetContainer'}>
-            
+        <div className={`widgetContainer ${className}`}>
+            {children}
         </div>
     )
 };

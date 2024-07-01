@@ -1,7 +1,7 @@
 import './Widget.css';
 import './../assets/NS-logo.png';
 
-const Widget = ({ children, title, id, className, childClassName, NSlogo }) => {
+const Widget = ({ children, title, className, childClassName, NSlogo }) => {
     return (
         <div className={`widget ${className}`}>
             {NSlogo ? (
