@@ -9,6 +9,7 @@ import WidgetContainerVandaag from './Components/WidgetContainerVandaag';
 import WidgetContainerEvents from './Components/WidgetContainerEvents';
 import lightBulp from './assets/lightbulpIcon.png';
 import gefeliciteerd from './assets/gefeliciteerd.png';
+import TrainDataContainer from './Components/TrainDataContainer';
 
 function App() {
   const getGreeting = () => {
@@ -81,14 +82,25 @@ function App() {
           </div>
         </WidgetContainerEvents>
       </Widget>
-      <Widget title={'Utrecht CS'} className={'widget-right bg-yellow'} NSlogo={NSlogo}>
-
+      <Widget title={'Utrecht CS'} className={'widget-right bg-yellow-light padding-x-0'} NSlogo={NSlogo} headerClassName={'margin-left-32px'}>
+        <TrainDataContainer className={'bg-yellow-dark rem-height-2'}/>
+        <TrainDataContainer
+          className={'TrainDataContainer bg-yellow-light'}
+          time={'07:20'}
+          destination={'Amsterdam'}
+          platformIcon={''}
+        >
+        </TrainDataContainer>
+        <TrainDataContainer
+          className={'TrainDataContainer bg-yellow-dark'}
+          destination={'Schiedam'}
+          time={'15:15'}
+          platformIcon={''}
+        >
+        </TrainDataContainer>
       </Widget>
     </div>
   );
 }
 
 export default App
-
-
-// EAA1qqeJZCfYEBO4RO5qsfd0oRJz5CMCTu7BVuJISQz3afR1lpE6e2eKecyAbNyg8gLrwvTTBdIfZCkjRpCZBxflWlUZBwyRu0NmgjsxJfPfAzfAEENTLaWnMF29HijW4CaZBv6wZAiddlMVL2tTInlhb5xbpZAEtua8hSVcfyK7ZA03WPCt55jD5ZBdnkxY9Efoo3G3lWAWXR2GU8BvlHKP2L1JrWkR0mlzhzd31GrgWTyFyhW3w2GfG9L4OObG47HLzvGrGk7gZDZD

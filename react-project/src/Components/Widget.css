@@ -54,12 +54,29 @@
     font-size: 1em;
 }
 
-.bg-yellow {
-    background-color: #FFF8DE;
+.bg-yellow-light {
+    background-color: rgba(255, 248, 222, 1);
 }
 
 #NS-icon {
     height: 1rem;
     align-self: center;
     transform: translateY(-0.15rem);
+}
+
+.padding-x-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.margin-left-32px {
+    margin-left: 32px;
+}
+
+.TrainDataContainer {
+    border: 2px solid rebeccapurple;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 0.5rem;
 }
