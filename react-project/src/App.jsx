@@ -88,14 +88,16 @@ function App() {
           className={'TrainDataContainer bg-yellow-light'}
           time={'07:20'}
           destination={'Amsterdam'}
-          platformIcon={''}
+          platformIcon={'3b'}
+          route={'Via Amsterdam-Zuid, Groningen'}
         >
         </TrainDataContainer>
         <TrainDataContainer
           className={'TrainDataContainer bg-yellow-dark'}
           destination={'Schiedam'}
           time={'15:15'}
-          platformIcon={''}
+          platformIcon={'11a'}
+          route={'Via Rotterdam Centraal, Gouda'}
         >
         </TrainDataContainer>
       </Widget>

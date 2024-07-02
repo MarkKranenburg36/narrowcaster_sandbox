@@ -1,6 +1,8 @@
-const PlatformIcon = () => {
+const PlatformIcon = ({number}) => {
     return(
-        <p>icon</p>
+        <div className="platformIcon">
+            {number}
+        </div>
     )
 }
 
